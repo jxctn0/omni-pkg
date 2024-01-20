@@ -1,11 +1,11 @@
-# rhino-pkg
-<img width="400" alt="placeholder-rpk" src="https://github.com/rhino-linux/rhino-pkg/assets/104327997/f1089f8d-4caa-4b27-83b7-9cc0a12ab5dc">
+# OmniPkg
 
-A package manager wrapper for Pacstall, APT, Flatpak and snap.
+A package manager wrapper for Unix-like systems. It is designed to be a single interface for all package managers, and to be as simple as possible.
+Based on [rhinopkg][rhinolin] by [RhinoLinux][rhino].
 
 ### Usage
 ```
-USAGE: rhino-pkg [function] {flag} <input>                                                  
+USAGE: omni [function] {flag} <input>                                                  
 
 functions:
     install: Install package(s) - Prompts user to respond with 
@@ -27,7 +27,7 @@ functions:
 flags: 
     --help/-h: Display this page
     
-    --description/-d: By default, rhino-pkg will only display packages 
+    --description/-d: By default, OmniPkg will only display packages 
     that contain <input> within their name. Use this flag to increase 
     range and display packages with <input> in their description.
 
@@ -37,7 +37,7 @@ input:
     Provide a package name or description.
 
 Example execution:
-    $ rhino-pkg install foobar
+    $ omni install foobar
     Found packages matching 'foobar':
 
     [0]: pyfoobar (apt)
@@ -55,11 +55,50 @@ Example execution:
     [...]
 ```
 
-### How you can help
-* Work on translations into languages not finished yet by either editing the `po/<language_code>.po` file, making a new one by running `cp po/rhino-pkg.pot po/<language_code>.po`, or using weblate (https://hosted.weblate.org/projects/rhino-linux/rhino-pkg/). Once you have completed or partially completed a po file, make a PR and we will merge it! Our goal is to have as many languages translated as possible due to the amount of people who may not be fluent in English.
+### Installation
+Just download the script and place it in your $PATH. You can also use the following command:
+```bash
+sudo wget -O /usr/bin/omni https://raw.githubusercontent.com/0mniscient/OmniPkg/master/omni && sudo chmod +x /usr/bin/omni
+```
 
-#### Supported languages
+### Supported Package Managers
+#### Binary Based (pacman, apt, etc)
+Package Manager | Default OS | Supported? | Notes
+--- | --- | --- | ---
+`apk` | Alpine | Yes |
+`apt` | Debian | Yes |
+`brew` | MacOS | Yes |
+`choco` | Windows | No | TODO
+`crew` | ChromeOS | No | TODO
+`dnf` | Fedora | Yes |
+`emerge` | Gentoo | Yes |
+`nix` | Linux | No | TODO
+`pacman` | Arch | Yes |
+`pkg` | Termux (Android) | Partial | Not recommended
+`scoop` | Windows | No | TODO
+`winget` | Windows | No | TODO
+`xbps` | Void | No | TODO
+`yum` | RHEL | Yes |
+`zypper` | OpenSUSE | Yes |
 
-<a href="https://hosted.weblate.org/engage/rhino-linux/">
-<img src="https://hosted.weblate.org/widgets/rhino-linux/-/rhino-pkg/multi-blue.svg" alt="Translation status" />
-</a>
+#### Container Based (flatpak, snap, docker, distrobox)
+Package Manager | Supported? | Notes
+--- | --- | ---
+`flatpak` | Yes |
+`snap` | Yes |
+`docker` | No | unlikely to be supported
+`distrobox` | No | unlikely to be supported
+
+### Dependencies
+- Python 3 
+
+### License
+This project is licensed under the GNU GPLv3 License - see the [LICENSE][def] file for details
+
+### Acknowledgments
+This is _heavily_ based on RhinoLinux's rhinopkg, which can be found [here][rhino].
+I hvae just rebased it to Python 3 and added support for other distros (I am a big fan of Fedora, and I wanted to use this on my Fedora machine instead of trying to figure out which package manager to use for each package).
+
+[def]: LICENSE
+[rhino]: https://github.com/RhinoLinux/rhinopkg
+[rhinolin]: https://rhinolinux.org/

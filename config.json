@@ -1,0 +1,39 @@
+{
+    "packageManagers": {
+        "local": {
+            "command": "dnf",
+            "install": "install",
+            "remove": "remove",
+            "update": "update",
+            "upgrade": "upgrade",
+            "search": "search",
+            "list": "list",
+            "show": "info",
+            "clean": "clean"
+        },
+        "containered": {
+            "flatpak": {
+                "command": "flatpak",
+                "install": "install",
+                "remove": "uninstall",
+                "update": "update",
+                "upgrade": "upgrade",
+                "search": "search",
+                "list": "list",
+                "show": "info",
+                "clean": "uninstall --unused"
+            },
+            "snap": {
+                "command": "snap",
+                "install": "install",
+                "remove": "remove",
+                "update": "refresh",
+                "upgrade": "refresh",
+                "search": "find",
+                "list": "list",
+                "show": "info",
+                "clean": "remove --purge"
+            }
+        }
+    }
+}
