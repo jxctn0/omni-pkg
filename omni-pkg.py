@@ -57,7 +57,18 @@ class PackageManager:
         raise NotImplementedError("Remove method must be implemented in the derived class")
 
 class Dnf:
-    def search(query):
+    def checkInstalled(package):
+        try:
+            output = subprocess.check_output(["dnf", "list", "installed", package], text=True)
+            output = output.split("\n")
+            if output[0].startswith("Error"):
+                return False
+            else:
+                return True
+        except subprocess.CalledProcessError:
+            return False
+
+    def search(self, query):
         try:
             output = subprocess.check_output(["dnf", "search", query], text=True)
             output = output.split("\n")
@@ -100,7 +111,8 @@ class Dnf:
                         thisItem = {
                             "Name": thisItem[0].split(".")[0],
                             "Architecture": thisItem[0].split(".")[1],
-                            "Description": thisItem[1]
+                            "Description": thisItem[1],
+                            "isInstalled": self.checkInstalled(thisItem[0].split(".")[0])
                         }
 
 
