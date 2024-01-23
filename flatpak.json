@@ -1,0 +1,93 @@
+{
+    "Firefox": {
+        "Description": "Web Browser",
+        "Application ID": "org.mozilla.Firefox",
+        "Version": "120.0.1",
+        "Branch": "stable",
+        "Remotes": "fedora"
+    },
+    "Mullvad Browser": {
+        "Description": "Free the internet from mass surveillance",
+        "Application ID": "net.mullvad.MullvadBrowser",
+        "Version": "13.0.7",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Datcord": {
+        "Description": "An open-source Discord client that uses Firefox",
+        "Application ID": "io.github.gamingdoom.Datcord",
+        "Version": "0.5.0",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Mojave-GTK": {
+        "Description": "Mojave-Style Theme for GTK Flatpak Applications",
+        "Application ID": "org.gtk.Gtk3theme.Mojave-light",
+        "Version": "0.1",
+        "Branch": "3.22",
+        "Remotes": "flathub"
+    },
+    "Firestorm Viewer": {
+        "Description": "Client for accessing 3D virtual worlds",
+        "Application ID": "org.firestormviewer.FirestormViewer",
+        "Version": "6.6.17.70368",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "BleachBit": {
+        "Description": "Cleans files to free disk space and to maintain privacy",
+        "Application ID": "org.bleachbit.BleachBit",
+        "Version": "v4.6.0",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Sync Passwd": {
+        "Description": "Update passwords",
+        "Application ID": "org.adishatz.syncpasswd",
+        "Version": "0.1.1",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Floorp": {
+        "Description": "Floorp browser",
+        "Application ID": "one.ablaze.floorp",
+        "Version": "11.7.1",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Joplin": {
+        "Description": "open source note taking and to-do application",
+        "Application ID": "net.cozic.joplin_desktop",
+        "Version": "2.13.15",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "LibreWolf": {
+        "Description": "LibreWolf Web Browser",
+        "Application ID": "io.gitlab.librewolf-community",
+        "Version": "121.0-1",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Vieb": {
+        "Description": "Vim Inspired Electron Browser",
+        "Application ID": "dev.vieb.Vieb",
+        "Version": "11.0.0",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Gabut Download Manager": {
+        "Description": "Simple and Fast Download Manager",
+        "Application ID": "com.github.gabutakut.gabutdm",
+        "Version": "2.1.6",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    },
+    "Ghostery Private Browser": {
+        "Description": "A completely private browsing experience from Ghostery",
+        "Application ID": "com.ghostery.browser",
+        "Version": "2023.10",
+        "Branch": "stable",
+        "Remotes": "flathub"
+    }
+}

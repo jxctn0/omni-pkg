@@ -1,0 +1,1336 @@
+{
+    "Exact": {
+        "libre": {
+            "Name": "libre",
+            "Architecture": "x86_64",
+            "Description": "Generic library for real-time communications"
+        }
+    },
+    "Similar": {
+        "NetworkManager-libreswan-gnome": {
+            "Name": "NetworkManager-libreswan-gnome",
+            "Architecture": "x86_64",
+            "Description": "NetworkManager VPN plugin for libreswan - GNOME files"
+        },
+        "djvulibre-devel": {
+            "Name": "djvulibre-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for DjVuLibre"
+        },
+        "djvulibre-libs": {
+            "Name": "djvulibre-libs",
+            "Architecture": "i686",
+            "Description": "Library files for DjVuLibre"
+        },
+        "librealsense-devel": {
+            "Name": "librealsense-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for librealsense"
+        },
+        "librealsense-doc": {
+            "Name": "librealsense-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation for librealsense"
+        },
+        "librealsense1-devel": {
+            "Name": "librealsense1-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for librealsense1"
+        },
+        "librealsense1-doc": {
+            "Name": "librealsense1-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation for librealsense1"
+        },
+        "librecad-devel": {
+            "Name": "librecad-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for LibreCAD"
+        },
+        "librecad-fonts": {
+            "Name": "librecad-fonts",
+            "Architecture": "noarch",
+            "Description": "Fonts in LibreCAD (lff) format"
+        },
+        "librecad-langs": {
+            "Name": "librecad-langs",
+            "Architecture": "noarch",
+            "Description": "Language (qm) files for LibreCAD"
+        },
+        "librecad-parts": {
+            "Name": "librecad-parts",
+            "Architecture": "noarch",
+            "Description": "Parts collection for LibreCAD"
+        },
+        "librecad-patterns": {
+            "Name": "librecad-patterns",
+            "Architecture": "noarch",
+            "Description": "Pattern files for LibreCAD"
+        },
+        "libref_array-devel": {
+            "Name": "libref_array-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for libref_array"
+        },
+        "librelp-devel": {
+            "Name": "librelp-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for the librelp package"
+        },
+        "libreoffice-TexMaths": {
+            "Name": "libreoffice-TexMaths",
+            "Architecture": "x86_64",
+            "Description": "A LaTex Equation Editor for LibreOffice"
+        },
+        "libreoffice-base": {
+            "Name": "libreoffice-base",
+            "Architecture": "x86_64",
+            "Description": "Database front-end for LibreOffice"
+        },
+        "libreoffice-calc": {
+            "Name": "libreoffice-calc",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Spreadsheet Application"
+        },
+        "libreoffice-core": {
+            "Name": "libreoffice-core",
+            "Architecture": "x86_64",
+            "Description": "Core modules for LibreOffice"
+        },
+        "libreoffice-data": {
+            "Name": "libreoffice-data",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice data files"
+        },
+        "libreoffice-draw": {
+            "Name": "libreoffice-draw",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Drawing Application"
+        },
+        "libreoffice-emailmerge": {
+            "Name": "libreoffice-emailmerge",
+            "Architecture": "x86_64",
+            "Description": "Email mail-merge component for LibreOffice"
+        },
+        "libreoffice-gallery-vrt-network-equipment": {
+            "Name": "libreoffice-gallery-vrt-network-equipment",
+            "Architecture": "x86_64",
+            "Description": "A network equipment shape gallery for LibreOffice"
+        },
+        "libreoffice-glade": {
+            "Name": "libreoffice-glade",
+            "Architecture": "x86_64",
+            "Description": "Support for creating LibreOffice dialogs in glade"
+        },
+        "libreoffice-grammalecte": {
+            "Name": "libreoffice-grammalecte",
+            "Architecture": "x86_64",
+            "Description": "French grammar checker for LibreOffice Writer"
+        },
+        "libreoffice-graphicfilter": {
+            "Name": "libreoffice-graphicfilter",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Extra Graphic filters"
+        },
+        "libreoffice-gtk3": {
+            "Name": "libreoffice-gtk3",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice GTK+ 3 integration plug-in"
+        },
+        "libreoffice-gtk4": {
+            "Name": "libreoffice-gtk4",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice GTK+ 4 experimental integration plug-in"
+        },
+        "libreoffice-help-ar": {
+            "Name": "libreoffice-help-ar",
+            "Architecture": "x86_64",
+            "Description": "Arabic help for LibreOffice"
+        },
+        "libreoffice-help-bg": {
+            "Name": "libreoffice-help-bg",
+            "Architecture": "x86_64",
+            "Description": "Bulgarian help for LibreOffice"
+        },
+        "libreoffice-help-bn": {
+            "Name": "libreoffice-help-bn",
+            "Architecture": "x86_64",
+            "Description": "Bengali help for LibreOffice"
+        },
+        "libreoffice-help-ca": {
+            "Name": "libreoffice-help-ca",
+            "Architecture": "x86_64",
+            "Description": "Catalan help for LibreOffice"
+        },
+        "libreoffice-help-cs": {
+            "Name": "libreoffice-help-cs",
+            "Architecture": "x86_64",
+            "Description": "Czech help for LibreOffice"
+        },
+        "libreoffice-help-da": {
+            "Name": "libreoffice-help-da",
+            "Architecture": "x86_64",
+            "Description": "Danish help for LibreOffice"
+        },
+        "libreoffice-help-de": {
+            "Name": "libreoffice-help-de",
+            "Architecture": "x86_64",
+            "Description": "German help for LibreOffice"
+        },
+        "libreoffice-help-dz": {
+            "Name": "libreoffice-help-dz",
+            "Architecture": "x86_64",
+            "Description": "Dzongkha help for LibreOffice"
+        },
+        "libreoffice-help-el": {
+            "Name": "libreoffice-help-el",
+            "Architecture": "x86_64",
+            "Description": "Greek help for LibreOffice"
+        },
+        "libreoffice-help-en": {
+            "Name": "libreoffice-help-en",
+            "Architecture": "x86_64",
+            "Description": "English help for LibreOffice"
+        },
+        "libreoffice-help-eo": {
+            "Name": "libreoffice-help-eo",
+            "Architecture": "x86_64",
+            "Description": "Esperanto help for LibreOffice"
+        },
+        "libreoffice-help-es": {
+            "Name": "libreoffice-help-es",
+            "Architecture": "x86_64",
+            "Description": "Spanish help for LibreOffice"
+        },
+        "libreoffice-help-et": {
+            "Name": "libreoffice-help-et",
+            "Architecture": "x86_64",
+            "Description": "Estonian help for LibreOffice"
+        },
+        "libreoffice-help-eu": {
+            "Name": "libreoffice-help-eu",
+            "Architecture": "x86_64",
+            "Description": "Basque help for LibreOffice"
+        },
+        "libreoffice-help-fi": {
+            "Name": "libreoffice-help-fi",
+            "Architecture": "x86_64",
+            "Description": "Finnish help for LibreOffice"
+        },
+        "libreoffice-help-fr": {
+            "Name": "libreoffice-help-fr",
+            "Architecture": "x86_64",
+            "Description": "French help for LibreOffice"
+        },
+        "libreoffice-help-gl": {
+            "Name": "libreoffice-help-gl",
+            "Architecture": "x86_64",
+            "Description": "Galician help for LibreOffice"
+        },
+        "libreoffice-help-gu": {
+            "Name": "libreoffice-help-gu",
+            "Architecture": "x86_64",
+            "Description": "Gujarati help for LibreOffice"
+        },
+        "libreoffice-help-he": {
+            "Name": "libreoffice-help-he",
+            "Architecture": "x86_64",
+            "Description": "Hebrew help for LibreOffice"
+        },
+        "libreoffice-help-hi": {
+            "Name": "libreoffice-help-hi",
+            "Architecture": "x86_64",
+            "Description": "Hindi help for LibreOffice"
+        },
+        "libreoffice-help-hr": {
+            "Name": "libreoffice-help-hr",
+            "Architecture": "x86_64",
+            "Description": "Croatian help for LibreOffice"
+        },
+        "libreoffice-help-hu": {
+            "Name": "libreoffice-help-hu",
+            "Architecture": "x86_64",
+            "Description": "Hungarian help for LibreOffice"
+        },
+        "libreoffice-help-id": {
+            "Name": "libreoffice-help-id",
+            "Architecture": "x86_64",
+            "Description": "Indonesian help for LibreOffice"
+        },
+        "libreoffice-help-it": {
+            "Name": "libreoffice-help-it",
+            "Architecture": "x86_64",
+            "Description": "Italian help for LibreOffice"
+        },
+        "libreoffice-help-ja": {
+            "Name": "libreoffice-help-ja",
+            "Architecture": "x86_64",
+            "Description": "Japanese help for LibreOffice"
+        },
+        "libreoffice-help-ko": {
+            "Name": "libreoffice-help-ko",
+            "Architecture": "x86_64",
+            "Description": "Korean help for LibreOffice"
+        },
+        "libreoffice-help-lt": {
+            "Name": "libreoffice-help-lt",
+            "Architecture": "x86_64",
+            "Description": "Lithuanian help for LibreOffice"
+        },
+        "libreoffice-help-lv": {
+            "Name": "libreoffice-help-lv",
+            "Architecture": "x86_64",
+            "Description": "Latvian help for LibreOffice"
+        },
+        "libreoffice-help-nb": {
+            "Name": "libreoffice-help-nb",
+            "Architecture": "x86_64",
+            "Description": "Bokmal help for LibreOffice"
+        },
+        "libreoffice-help-nl": {
+            "Name": "libreoffice-help-nl",
+            "Architecture": "x86_64",
+            "Description": "Dutch help for LibreOffice"
+        },
+        "libreoffice-help-nn": {
+            "Name": "libreoffice-help-nn",
+            "Architecture": "x86_64",
+            "Description": "Nynorsk help for LibreOffice"
+        },
+        "libreoffice-help-pl": {
+            "Name": "libreoffice-help-pl",
+            "Architecture": "x86_64",
+            "Description": "Polish help for LibreOffice"
+        },
+        "libreoffice-help-pt-BR": {
+            "Name": "libreoffice-help-pt-BR",
+            "Architecture": "x86_64",
+            "Description": "Brazilian help for LibreOffice"
+        },
+        "libreoffice-help-pt-PT": {
+            "Name": "libreoffice-help-pt-PT",
+            "Architecture": "x86_64",
+            "Description": "Portuguese help for LibreOffice"
+        },
+        "libreoffice-help-ro": {
+            "Name": "libreoffice-help-ro",
+            "Architecture": "x86_64",
+            "Description": "Romanian help for LibreOffice"
+        },
+        "libreoffice-help-ru": {
+            "Name": "libreoffice-help-ru",
+            "Architecture": "x86_64",
+            "Description": "Russian help for LibreOffice"
+        },
+        "libreoffice-help-si": {
+            "Name": "libreoffice-help-si",
+            "Architecture": "x86_64",
+            "Description": "Sinhalese help for LibreOffice"
+        },
+        "libreoffice-help-sk": {
+            "Name": "libreoffice-help-sk",
+            "Architecture": "x86_64",
+            "Description": "Slovak help for LibreOffice"
+        },
+        "libreoffice-help-sl": {
+            "Name": "libreoffice-help-sl",
+            "Architecture": "x86_64",
+            "Description": "Slovenian help for LibreOffice"
+        },
+        "libreoffice-help-sv": {
+            "Name": "libreoffice-help-sv",
+            "Architecture": "x86_64",
+            "Description": "Swedish help for LibreOffice"
+        },
+        "libreoffice-help-ta": {
+            "Name": "libreoffice-help-ta",
+            "Architecture": "x86_64",
+            "Description": "Tamil help for LibreOffice"
+        },
+        "libreoffice-help-tr": {
+            "Name": "libreoffice-help-tr",
+            "Architecture": "x86_64",
+            "Description": "Turkish help for LibreOffice"
+        },
+        "libreoffice-help-uk": {
+            "Name": "libreoffice-help-uk",
+            "Architecture": "x86_64",
+            "Description": "Ukrainian help for LibreOffice"
+        },
+        "libreoffice-help-zh-Hans": {
+            "Name": "libreoffice-help-zh-Hans",
+            "Architecture": "x86_64",
+            "Description": "Simplified help for LibreOffice"
+        },
+        "libreoffice-help-zh-Hant": {
+            "Name": "libreoffice-help-zh-Hant",
+            "Architecture": "x86_64",
+            "Description": "Traditional help for LibreOffice"
+        },
+        "libreoffice-icon-theme-papirus": {
+            "Name": "libreoffice-icon-theme-papirus",
+            "Architecture": "x86_64",
+            "Description": "Papirus theme for LibreOffice"
+        },
+        "libreoffice-impress": {
+            "Name": "libreoffice-impress",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Presentation Application"
+        },
+        "libreoffice-kf5": {
+            "Name": "libreoffice-kf5",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice KDE Frameworks 5 integration plug-in"
+        },
+        "libreoffice-langpack-af": {
+            "Name": "libreoffice-langpack-af",
+            "Architecture": "x86_64",
+            "Description": "Afrikaans language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ar": {
+            "Name": "libreoffice-langpack-ar",
+            "Architecture": "x86_64",
+            "Description": "Arabic language pack for LibreOffice"
+        },
+        "libreoffice-langpack-as": {
+            "Name": "libreoffice-langpack-as",
+            "Architecture": "x86_64",
+            "Description": "Assamese language pack for LibreOffice"
+        },
+        "libreoffice-langpack-bg": {
+            "Name": "libreoffice-langpack-bg",
+            "Architecture": "x86_64",
+            "Description": "Bulgarian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-bn": {
+            "Name": "libreoffice-langpack-bn",
+            "Architecture": "x86_64",
+            "Description": "Bengali language pack for LibreOffice"
+        },
+        "libreoffice-langpack-br": {
+            "Name": "libreoffice-langpack-br",
+            "Architecture": "x86_64",
+            "Description": "Breton language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ca": {
+            "Name": "libreoffice-langpack-ca",
+            "Architecture": "x86_64",
+            "Description": "Catalan language pack for LibreOffice"
+        },
+        "libreoffice-langpack-cs": {
+            "Name": "libreoffice-langpack-cs",
+            "Architecture": "x86_64",
+            "Description": "Czech language pack for LibreOffice"
+        },
+        "libreoffice-langpack-cy": {
+            "Name": "libreoffice-langpack-cy",
+            "Architecture": "x86_64",
+            "Description": "Welsh language pack for LibreOffice"
+        },
+        "libreoffice-langpack-da": {
+            "Name": "libreoffice-langpack-da",
+            "Architecture": "x86_64",
+            "Description": "Danish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-de": {
+            "Name": "libreoffice-langpack-de",
+            "Architecture": "x86_64",
+            "Description": "German language pack for LibreOffice"
+        },
+        "libreoffice-langpack-dz": {
+            "Name": "libreoffice-langpack-dz",
+            "Architecture": "x86_64",
+            "Description": "Dzongkha language pack for LibreOffice"
+        },
+        "libreoffice-langpack-el": {
+            "Name": "libreoffice-langpack-el",
+            "Architecture": "x86_64",
+            "Description": "Greek language pack for LibreOffice"
+        },
+        "libreoffice-langpack-en": {
+            "Name": "libreoffice-langpack-en",
+            "Architecture": "x86_64",
+            "Description": "English language pack for LibreOffice"
+        },
+        "libreoffice-langpack-eo": {
+            "Name": "libreoffice-langpack-eo",
+            "Architecture": "x86_64",
+            "Description": "Esperanto language pack for LibreOffice"
+        },
+        "libreoffice-langpack-es": {
+            "Name": "libreoffice-langpack-es",
+            "Architecture": "x86_64",
+            "Description": "Spanish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-et": {
+            "Name": "libreoffice-langpack-et",
+            "Architecture": "x86_64",
+            "Description": "Estonian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-eu": {
+            "Name": "libreoffice-langpack-eu",
+            "Architecture": "x86_64",
+            "Description": "Basque language pack for LibreOffice"
+        },
+        "libreoffice-langpack-fa": {
+            "Name": "libreoffice-langpack-fa",
+            "Architecture": "x86_64",
+            "Description": "Farsi language pack for LibreOffice"
+        },
+        "libreoffice-langpack-fi": {
+            "Name": "libreoffice-langpack-fi",
+            "Architecture": "x86_64",
+            "Description": "Finnish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-fr": {
+            "Name": "libreoffice-langpack-fr",
+            "Architecture": "x86_64",
+            "Description": "French language pack for LibreOffice"
+        },
+        "libreoffice-langpack-fy": {
+            "Name": "libreoffice-langpack-fy",
+            "Architecture": "x86_64",
+            "Description": "Frisian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ga": {
+            "Name": "libreoffice-langpack-ga",
+            "Architecture": "x86_64",
+            "Description": "Irish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-gl": {
+            "Name": "libreoffice-langpack-gl",
+            "Architecture": "x86_64",
+            "Description": "Galician language pack for LibreOffice"
+        },
+        "libreoffice-langpack-gu": {
+            "Name": "libreoffice-langpack-gu",
+            "Architecture": "x86_64",
+            "Description": "Gujarati language pack for LibreOffice"
+        },
+        "libreoffice-langpack-he": {
+            "Name": "libreoffice-langpack-he",
+            "Architecture": "x86_64",
+            "Description": "Hebrew language pack for LibreOffice"
+        },
+        "libreoffice-langpack-hi": {
+            "Name": "libreoffice-langpack-hi",
+            "Architecture": "x86_64",
+            "Description": "Hindi language pack for LibreOffice"
+        },
+        "libreoffice-langpack-hr": {
+            "Name": "libreoffice-langpack-hr",
+            "Architecture": "x86_64",
+            "Description": "Croatian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-hu": {
+            "Name": "libreoffice-langpack-hu",
+            "Architecture": "x86_64",
+            "Description": "Hungarian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-id": {
+            "Name": "libreoffice-langpack-id",
+            "Architecture": "x86_64",
+            "Description": "Indonesian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-it": {
+            "Name": "libreoffice-langpack-it",
+            "Architecture": "x86_64",
+            "Description": "Italian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ja": {
+            "Name": "libreoffice-langpack-ja",
+            "Architecture": "x86_64",
+            "Description": "Japanese language pack for LibreOffice"
+        },
+        "libreoffice-langpack-kk": {
+            "Name": "libreoffice-langpack-kk",
+            "Architecture": "x86_64",
+            "Description": "Kazakh language pack for LibreOffice"
+        },
+        "libreoffice-langpack-kn": {
+            "Name": "libreoffice-langpack-kn",
+            "Architecture": "x86_64",
+            "Description": "Kannada language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ko": {
+            "Name": "libreoffice-langpack-ko",
+            "Architecture": "x86_64",
+            "Description": "Korean language pack for LibreOffice"
+        },
+        "libreoffice-langpack-lt": {
+            "Name": "libreoffice-langpack-lt",
+            "Architecture": "x86_64",
+            "Description": "Lithuanian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-lv": {
+            "Name": "libreoffice-langpack-lv",
+            "Architecture": "x86_64",
+            "Description": "Latvian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-mai": {
+            "Name": "libreoffice-langpack-mai",
+            "Architecture": "x86_64",
+            "Description": "Maithili language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ml": {
+            "Name": "libreoffice-langpack-ml",
+            "Architecture": "x86_64",
+            "Description": "Malayalam language pack for LibreOffice"
+        },
+        "libreoffice-langpack-mr": {
+            "Name": "libreoffice-langpack-mr",
+            "Architecture": "x86_64",
+            "Description": "Marathi language pack for LibreOffice"
+        },
+        "libreoffice-langpack-nb": {
+            "Name": "libreoffice-langpack-nb",
+            "Architecture": "x86_64",
+            "Description": "Bokmal language pack for LibreOffice"
+        },
+        "libreoffice-langpack-nl": {
+            "Name": "libreoffice-langpack-nl",
+            "Architecture": "x86_64",
+            "Description": "Dutch language pack for LibreOffice"
+        },
+        "libreoffice-langpack-nn": {
+            "Name": "libreoffice-langpack-nn",
+            "Architecture": "x86_64",
+            "Description": "Nynorsk language pack for LibreOffice"
+        },
+        "libreoffice-langpack-nr": {
+            "Name": "libreoffice-langpack-nr",
+            "Architecture": "x86_64",
+            "Description": "Southern language pack for LibreOffice"
+        },
+        "libreoffice-langpack-nso": {
+            "Name": "libreoffice-langpack-nso",
+            "Architecture": "x86_64",
+            "Description": "Northern language pack for LibreOffice"
+        },
+        "libreoffice-langpack-or": {
+            "Name": "libreoffice-langpack-or",
+            "Architecture": "x86_64",
+            "Description": "Odia language pack for LibreOffice"
+        },
+        "libreoffice-langpack-pa": {
+            "Name": "libreoffice-langpack-pa",
+            "Architecture": "x86_64",
+            "Description": "Punjabi language pack for LibreOffice"
+        },
+        "libreoffice-langpack-pl": {
+            "Name": "libreoffice-langpack-pl",
+            "Architecture": "x86_64",
+            "Description": "Polish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-pt-BR": {
+            "Name": "libreoffice-langpack-pt-BR",
+            "Architecture": "x86_64",
+            "Description": "Brazilian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-pt-PT": {
+            "Name": "libreoffice-langpack-pt-PT",
+            "Architecture": "x86_64",
+            "Description": "Portuguese language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ro": {
+            "Name": "libreoffice-langpack-ro",
+            "Architecture": "x86_64",
+            "Description": "Romanian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ru": {
+            "Name": "libreoffice-langpack-ru",
+            "Architecture": "x86_64",
+            "Description": "Russian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-si": {
+            "Name": "libreoffice-langpack-si",
+            "Architecture": "x86_64",
+            "Description": "Sinhalese language pack for LibreOffice"
+        },
+        "libreoffice-langpack-sk": {
+            "Name": "libreoffice-langpack-sk",
+            "Architecture": "x86_64",
+            "Description": "Slovak language pack for LibreOffice"
+        },
+        "libreoffice-langpack-sl": {
+            "Name": "libreoffice-langpack-sl",
+            "Architecture": "x86_64",
+            "Description": "Slovenian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-sr": {
+            "Name": "libreoffice-langpack-sr",
+            "Architecture": "x86_64",
+            "Description": "Serbian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ss": {
+            "Name": "libreoffice-langpack-ss",
+            "Architecture": "x86_64",
+            "Description": "Swati language pack for LibreOffice"
+        },
+        "libreoffice-langpack-st": {
+            "Name": "libreoffice-langpack-st",
+            "Architecture": "x86_64",
+            "Description": "Southern language pack for LibreOffice"
+        },
+        "libreoffice-langpack-sv": {
+            "Name": "libreoffice-langpack-sv",
+            "Architecture": "x86_64",
+            "Description": "Swedish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ta": {
+            "Name": "libreoffice-langpack-ta",
+            "Architecture": "x86_64",
+            "Description": "Tamil language pack for LibreOffice"
+        },
+        "libreoffice-langpack-te": {
+            "Name": "libreoffice-langpack-te",
+            "Architecture": "x86_64",
+            "Description": "Telugu language pack for LibreOffice"
+        },
+        "libreoffice-langpack-th": {
+            "Name": "libreoffice-langpack-th",
+            "Architecture": "x86_64",
+            "Description": "Thai language pack for LibreOffice"
+        },
+        "libreoffice-langpack-tn": {
+            "Name": "libreoffice-langpack-tn",
+            "Architecture": "x86_64",
+            "Description": "Tswana language pack for LibreOffice"
+        },
+        "libreoffice-langpack-tr": {
+            "Name": "libreoffice-langpack-tr",
+            "Architecture": "x86_64",
+            "Description": "Turkish language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ts": {
+            "Name": "libreoffice-langpack-ts",
+            "Architecture": "x86_64",
+            "Description": "Tsonga language pack for LibreOffice"
+        },
+        "libreoffice-langpack-uk": {
+            "Name": "libreoffice-langpack-uk",
+            "Architecture": "x86_64",
+            "Description": "Ukrainian language pack for LibreOffice"
+        },
+        "libreoffice-langpack-ve": {
+            "Name": "libreoffice-langpack-ve",
+            "Architecture": "x86_64",
+            "Description": "Venda language pack for LibreOffice"
+        },
+        "libreoffice-langpack-xh": {
+            "Name": "libreoffice-langpack-xh",
+            "Architecture": "x86_64",
+            "Description": "Xhosa language pack for LibreOffice"
+        },
+        "libreoffice-langpack-zh-Hans": {
+            "Name": "libreoffice-langpack-zh-Hans",
+            "Architecture": "x86_64",
+            "Description": "Simplified language pack for LibreOffice"
+        },
+        "libreoffice-langpack-zh-Hant": {
+            "Name": "libreoffice-langpack-zh-Hant",
+            "Architecture": "x86_64",
+            "Description": "Traditional language pack for LibreOffice"
+        },
+        "libreoffice-langpack-zu": {
+            "Name": "libreoffice-langpack-zu",
+            "Architecture": "x86_64",
+            "Description": "Zulu language pack for LibreOffice"
+        },
+        "libreoffice-librelogo": {
+            "Name": "libreoffice-librelogo",
+            "Architecture": "x86_64",
+            "Description": "LibreLogo scripting language"
+        },
+        "libreoffice-math": {
+            "Name": "libreoffice-math",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Equation Editor Application"
+        },
+        "libreoffice-nlpsolver": {
+            "Name": "libreoffice-nlpsolver",
+            "Architecture": "x86_64",
+            "Description": "Non-linear solver engine for LibreOffice Calc"
+        },
+        "libreoffice-officebean": {
+            "Name": "libreoffice-officebean",
+            "Architecture": "x86_64",
+            "Description": "JavaBean for LibreOffice Components"
+        },
+        "libreoffice-officebean-common": {
+            "Name": "libreoffice-officebean-common",
+            "Architecture": "noarch",
+            "Description": "Common JavaBean for LibreOffice Components"
+        },
+        "libreoffice-ogltrans": {
+            "Name": "libreoffice-ogltrans",
+            "Architecture": "x86_64",
+            "Description": "3D OpenGL slide transitions for LibreOffice"
+        },
+        "libreoffice-opensymbol-fonts": {
+            "Name": "libreoffice-opensymbol-fonts",
+            "Architecture": "noarch",
+            "Description": "LibreOffice dingbats font"
+        },
+        "libreoffice-pdfimport": {
+            "Name": "libreoffice-pdfimport",
+            "Architecture": "x86_64",
+            "Description": "PDF Importer for LibreOffice Draw"
+        },
+        "libreoffice-postgresql": {
+            "Name": "libreoffice-postgresql",
+            "Architecture": "x86_64",
+            "Description": "PostgreSQL connector for LibreOffice"
+        },
+        "libreoffice-pyuno": {
+            "Name": "libreoffice-pyuno",
+            "Architecture": "x86_64",
+            "Description": "Python support for LibreOffice"
+        },
+        "libreoffice-sdk": {
+            "Name": "libreoffice-sdk",
+            "Architecture": "x86_64",
+            "Description": "Software Development Kit for LibreOffice"
+        },
+        "libreoffice-sdk-doc": {
+            "Name": "libreoffice-sdk-doc",
+            "Architecture": "x86_64",
+            "Description": "Software Development Kit documentation for LibreOffice"
+        },
+        "libreoffice-voikko": {
+            "Name": "libreoffice-voikko",
+            "Architecture": "x86_64",
+            "Description": "Finnish spellchecker and hyphenator extension for LibreOffice"
+        },
+        "libreoffice-wiki-publisher": {
+            "Name": "libreoffice-wiki-publisher",
+            "Architecture": "x86_64",
+            "Description": "Create Wiki articles on MediaWiki servers with LibreOffice"
+        },
+        "libreoffice-writer": {
+            "Name": "libreoffice-writer",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Word Processor Application"
+        },
+        "libreoffice-writer2latex": {
+            "Name": "libreoffice-writer2latex",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Writer To LateX Converter"
+        },
+        "libreoffice-writer2xhtml": {
+            "Name": "libreoffice-writer2xhtml",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice Writer to xhtml Converter"
+        },
+        "libreoffice-x11": {
+            "Name": "libreoffice-x11",
+            "Architecture": "x86_64",
+            "Description": "LibreOffice generic X11 support plug-in"
+        },
+        "libreoffice-xsltfilter": {
+            "Name": "libreoffice-xsltfilter",
+            "Architecture": "x86_64",
+            "Description": "Optional xsltfilter module for LibreOffice"
+        },
+        "libreofficekit": {
+            "Name": "libreofficekit",
+            "Architecture": "x86_64",
+            "Description": "A library providing access to LibreOffice functionality"
+        },
+        "libreofficekit-devel": {
+            "Name": "libreofficekit-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for libreofficekit"
+        },
+        "librep-devel": {
+            "Name": "librep-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for librep"
+        },
+        "libreplaygain-devel": {
+            "Name": "libreplaygain-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for libreplaygain"
+        },
+        "libreport-centos": {
+            "Name": "libreport-centos",
+            "Architecture": "x86_64",
+            "Description": "libreport's CentOS Bug Tracker workflow"
+        },
+        "libreport-cli": {
+            "Name": "libreport-cli",
+            "Architecture": "x86_64",
+            "Description": "libreport's command line interface"
+        },
+        "libreport-devel": {
+            "Name": "libreport-devel",
+            "Architecture": "x86_64",
+            "Description": "Development libraries and headers for libreport"
+        },
+        "libreport-filesystem": {
+            "Name": "libreport-filesystem",
+            "Architecture": "noarch",
+            "Description": "Filesystem layout for libreport"
+        },
+        "libreport-gtk": {
+            "Name": "libreport-gtk",
+            "Architecture": "i686",
+            "Description": "GTK front-end for libreport"
+        },
+        "libreport-gtk-devel": {
+            "Name": "libreport-gtk-devel",
+            "Architecture": "x86_64",
+            "Description": "Development libraries and headers for libreport"
+        },
+        "libreport-newt": {
+            "Name": "libreport-newt",
+            "Architecture": "x86_64",
+            "Description": "libreport's newt interface"
+        },
+        "libreport-plugin-bugzilla": {
+            "Name": "libreport-plugin-bugzilla",
+            "Architecture": "x86_64",
+            "Description": "libreport's bugzilla plugin"
+        },
+        "libreport-plugin-kerneloops": {
+            "Name": "libreport-plugin-kerneloops",
+            "Architecture": "x86_64",
+            "Description": "libreport's kerneloops reporter plugin"
+        },
+        "libreport-plugin-logger": {
+            "Name": "libreport-plugin-logger",
+            "Architecture": "x86_64",
+            "Description": "libreport's logger reporter plugin"
+        },
+        "libreport-plugin-mailx": {
+            "Name": "libreport-plugin-mailx",
+            "Architecture": "x86_64",
+            "Description": "libreport's mailx reporter plugin"
+        },
+        "libreport-plugin-mantisbt": {
+            "Name": "libreport-plugin-mantisbt",
+            "Architecture": "x86_64",
+            "Description": "libreport's mantisbt plugin"
+        },
+        "libreport-plugin-reportuploader": {
+            "Name": "libreport-plugin-reportuploader",
+            "Architecture": "x86_64",
+            "Description": "libreport's reportuploader plugin"
+        },
+        "libreport-plugin-systemd-journal": {
+            "Name": "libreport-plugin-systemd-journal",
+            "Architecture": "x86_64",
+            "Description": "libreport's systemd journal reporter plugin"
+        },
+        "libreport-plugin-ureport": {
+            "Name": "libreport-plugin-ureport",
+            "Architecture": "x86_64",
+            "Description": "libreport's micro report plugin"
+        },
+        "libreport-web": {
+            "Name": "libreport-web",
+            "Architecture": "i686",
+            "Description": "Library providing network API for libreport"
+        },
+        "libreport-web-devel": {
+            "Name": "libreport-web-devel",
+            "Architecture": "x86_64",
+            "Description": "Development headers for libreport-web"
+        },
+        "librepository-javadoc": {
+            "Name": "librepository-javadoc",
+            "Architecture": "noarch",
+            "Description": "Javadoc for librepository"
+        },
+        "libresample-devel": {
+            "Name": "libresample-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for libresample"
+        },
+        "libretls": {
+            "Name": "libretls",
+            "Architecture": "x86_64",
+            "Description": "Port of libtls from LibreSSL to OpenSSL"
+        },
+        "libretls-devel": {
+            "Name": "libretls-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for libretls"
+        },
+        "libretls-static": {
+            "Name": "libretls-static",
+            "Architecture": "x86_64",
+            "Description": "Static library for libretls"
+        },
+        "libretro-beetle-ngp": {
+            "Name": "libretro-beetle-ngp",
+            "Architecture": "x86_64",
+            "Description": "Standalone port of Mednafen NGP to the libretro API, itself a fork of Neopop"
+        },
+        "libretro-beetle-pce-fast": {
+            "Name": "libretro-beetle-pce-fast",
+            "Architecture": "x86_64",
+            "Description": "Standalone port of Mednafen PCE Fast to libretro"
+        },
+        "libretro-beetle-vb": {
+            "Name": "libretro-beetle-vb",
+            "Architecture": "x86_64",
+            "Description": "Standalone port of Mednafen VB to libretro"
+        },
+        "libretro-beetle-wswan": {
+            "Name": "libretro-beetle-wswan",
+            "Architecture": "x86_64",
+            "Description": "Standalone port of Mednafen WonderSwan to libretro, itself a fork of Cygne"
+        },
+        "libretro-desmume2015": {
+            "Name": "libretro-desmume2015",
+            "Architecture": "x86_64",
+            "Description": "Port of Desmume to libretro"
+        },
+        "libretro-gambatte": {
+            "Name": "libretro-gambatte",
+            "Architecture": "x86_64",
+            "Description": "Libretro implementation of libgambatte"
+        },
+        "libretro-gtk-1-0": {
+            "Name": "libretro-gtk-1-0",
+            "Architecture": "x86_64",
+            "Description": "The GTK+ Libretro frontend framework"
+        },
+        "libretro-gw": {
+            "Name": "libretro-gw",
+            "Architecture": "x86_64",
+            "Description": "Libretro core for Game & Watch simulators"
+        },
+        "libretro-handy": {
+            "Name": "libretro-handy",
+            "Architecture": "x86_64",
+            "Description": "K. Wilkins' Atari Lynx emulator Handy (http://handy.sourceforge.net/) for libretro"
+        },
+        "libretro-nestopia": {
+            "Name": "libretro-nestopia",
+            "Architecture": "x86_64",
+            "Description": "Nestopia emulator with libretro interface"
+        },
+        "libretro-prosystem": {
+            "Name": "libretro-prosystem",
+            "Architecture": "x86_64",
+            "Description": "Port of ProSystem to the libretro API"
+        },
+        "libretro-stella2014": {
+            "Name": "libretro-stella2014",
+            "Architecture": "x86_64",
+            "Description": "Port of Stella to libretro"
+        },
+        "librevenge-devel": {
+            "Name": "librevenge-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for librevenge"
+        },
+        "librevenge-doc": {
+            "Name": "librevenge-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation of librevenge API"
+        },
+        "librevenge-gdb": {
+            "Name": "librevenge-gdb",
+            "Architecture": "x86_64",
+            "Description": "gdb pretty printers for librevenge"
+        },
+        "mingw32-djvulibre": {
+            "Name": "mingw32-djvulibre",
+            "Architecture": "noarch",
+            "Description": "MinGW Windows djvulibre library"
+        },
+        "mingw32-djvulibre-tools": {
+            "Name": "mingw32-djvulibre-tools",
+            "Architecture": "noarch",
+            "Description": "Tools for the  MinGW Windows djvulibre library"
+        },
+        "mingw64-djvulibre": {
+            "Name": "mingw64-djvulibre",
+            "Architecture": "noarch",
+            "Description": "MinGW Windows djvulibre library"
+        },
+        "mingw64-djvulibre-tools": {
+            "Name": "mingw64-djvulibre-tools",
+            "Architecture": "noarch",
+            "Description": "Tools for the  MinGW Windows djvulibre library"
+        },
+        "python-djvulibre-doc": {
+            "Name": "python-djvulibre-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation for python-djvulibre"
+        },
+        "python3-librealsense": {
+            "Name": "python3-librealsense",
+            "Architecture": "x86_64",
+            "Description": "Python bindings for librealsense"
+        },
+        "python3-librealsense-devel": {
+            "Name": "python3-librealsense-devel",
+            "Architecture": "x86_64",
+            "Description": "Python development files for librealsense"
+        },
+        "python3-librepo": {
+            "Name": "python3-librepo",
+            "Architecture": "x86_64",
+            "Description": "Python 3 bindings for the librepo library"
+        },
+        "texlive-garamond-libre": {
+            "Name": "texlive-garamond-libre",
+            "Architecture": "noarch",
+            "Description": "The Garamond Libre font face"
+        },
+        "texlive-librebaskerville": {
+            "Name": "texlive-librebaskerville",
+            "Architecture": "noarch",
+            "Description": "LaTeX support for the Libre Baskerville family of fonts"
+        },
+        "texlive-librebaskerville-doc": {
+            "Name": "texlive-librebaskerville-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation for librebaskerville"
+        },
+        "texlive-librebodoni": {
+            "Name": "texlive-librebodoni",
+            "Architecture": "noarch",
+            "Description": "Libre Bodoni fonts with LaTeX support"
+        },
+        "texlive-librebodoni-doc": {
+            "Name": "texlive-librebodoni-doc",
+            "Architecture": "noarch",
+            "Description": "doc files of librebodoni"
+        },
+        "texlive-librecaslon": {
+            "Name": "texlive-librecaslon",
+            "Architecture": "noarch",
+            "Description": "Libre Caslon fonts, with LaTeX support"
+        },
+        "texlive-librecaslon-doc": {
+            "Name": "texlive-librecaslon-doc",
+            "Architecture": "noarch",
+            "Description": "Documentation for librecaslon"
+        },
+        "texlive-librefranklin": {
+            "Name": "texlive-librefranklin",
+            "Architecture": "noarch",
+            "Description": "LaTeX support for the Libre-Franklin family of fonts"
+        },
+        "NetworkManager-libreswan": {
+            "Name": "NetworkManager-libreswan",
+            "Architecture": "x86_64",
+            "Description": "NetworkManager VPN plug-in for IPsec VPN"
+        },
+        "calibre": {
+            "Name": "calibre",
+            "Architecture": "x86_64",
+            "Description": "E-book converter and library manager"
+        },
+        "djvulibre": {
+            "Name": "djvulibre",
+            "Architecture": "x86_64",
+            "Description": "DjVu viewers, encoders, and utilities"
+        },
+        "libre-devel": {
+            "Name": "libre-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for the re library"
+        },
+        "librealsense": {
+            "Name": "librealsense",
+            "Architecture": "x86_64",
+            "Description": "Cross-platform camera capture for Intel RealSense"
+        },
+        "librealsense1": {
+            "Name": "librealsense1",
+            "Architecture": "x86_64",
+            "Description": "Cross-platform camera capture for Intel RealSense"
+        },
+        "librecad": {
+            "Name": "librecad",
+            "Architecture": "x86_64",
+            "Description": "Computer Assisted Design (CAD) Application"
+        },
+        "libref_array": {
+            "Name": "libref_array",
+            "Architecture": "i686",
+            "Description": "A refcounted array for C"
+        },
+        "librelp": {
+            "Name": "librelp",
+            "Architecture": "x86_64",
+            "Description": "The Reliable Event Logging Protocol library"
+        },
+        "librem": {
+            "Name": "librem",
+            "Architecture": "x86_64",
+            "Description": "Audio and video processing media library"
+        },
+        "librem-devel": {
+            "Name": "librem-devel",
+            "Architecture": "x86_64",
+            "Description": "Development files for the rem library"
+        },
+        "libreoffice": {
+            "Name": "libreoffice",
+            "Architecture": "x86_64",
+            "Description": "Free Software Productivity Suite"
+        },
+        "libreoffice-filters": {
+            "Name": "libreoffice-filters",
+            "Architecture": "x86_64",
+            "Description": "All import / export filters"
+        },
+        "libreoffice-gdb-debug-support": {
+            "Name": "libreoffice-gdb-debug-support",
+            "Architecture": "x86_64",
+            "Description": "Additional support for debugging with gdb"
+        },
+        "libreoffice-ure": {
+            "Name": "libreoffice-ure",
+            "Architecture": "x86_64",
+            "Description": "UNO Runtime Environment"
+        },
+        "libreoffice-ure-common": {
+            "Name": "libreoffice-ure-common",
+            "Architecture": "x86_64",
+            "Description": "Common UNO Runtime Environment"
+        },
+        "librep": {
+            "Name": "librep",
+            "Architecture": "x86_64",
+            "Description": "A lightweight Lisp environment"
+        },
+        "libreplaygain": {
+            "Name": "libreplaygain",
+            "Architecture": "x86_64",
+            "Description": "Gain analysis library from Musepack"
+        },
+        "librepo": {
+            "Name": "librepo",
+            "Architecture": "i686",
+            "Description": "Repodata downloading library"
+        },
+        "librepo-devel": {
+            "Name": "librepo-devel",
+            "Architecture": "x86_64",
+            "Description": "Repodata downloading library"
+        },
+        "libreport": {
+            "Name": "libreport",
+            "Architecture": "i686",
+            "Description": "Generic library for reporting various problems"
+        },
+        "libreport-anaconda": {
+            "Name": "libreport-anaconda",
+            "Architecture": "x86_64",
+            "Description": "Default configuration for reporting anaconda bugs"
+        },
+        "libreport-fedora": {
+            "Name": "libreport-fedora",
+            "Architecture": "x86_64",
+            "Description": "Default configuration for reporting bugs via Fedora infrastructure"
+        },
+        "librepository": {
+            "Name": "librepository",
+            "Architecture": "noarch",
+            "Description": "Hierarchical repository abstraction layer"
+        },
+        "libresample": {
+            "Name": "libresample",
+            "Architecture": "x86_64",
+            "Description": "A real-time library for audio sampling rate conversion"
+        },
+        "libreswan": {
+            "Name": "libreswan",
+            "Architecture": "x86_64",
+            "Description": "Internet Key Exchange (IKEv1 and IKEv2) implementation for IPsec"
+        },
+        "libretro-bsnes-mercury": {
+            "Name": "libretro-bsnes-mercury",
+            "Architecture": "x86_64",
+            "Description": "Fork of bsnes with various performance improvements"
+        },
+        "libretro-mgba": {
+            "Name": "libretro-mgba",
+            "Architecture": "x86_64",
+            "Description": "mGBA Game Boy Advance Emulator"
+        },
+        "libretro-pcsx-rearmed": {
+            "Name": "libretro-pcsx-rearmed",
+            "Architecture": "x86_64",
+            "Description": "ARM optimized PCSX fork"
+        },
+        "librevenge": {
+            "Name": "librevenge",
+            "Architecture": "x86_64",
+            "Description": "A base library for writing document import filters"
+        },
+        "menulibre": {
+            "Name": "menulibre",
+            "Architecture": "noarch",
+            "Description": "FreeDesktop.org compliant menu editor"
+        },
+        "python3-djvulibre": {
+            "Name": "python3-djvulibre",
+            "Architecture": "x86_64",
+            "Description": "Python support for the DjVu image format"
+        },
+        "python3-libreport": {
+            "Name": "python3-libreport",
+            "Architecture": "x86_64",
+            "Description": "Python 3 bindings for report-libs"
+        },
+        "apa-new-athena-unicode-fonts": {
+            "Name": "apa-new-athena-unicode-fonts",
+            "Architecture": "noarch",
+            "Description": "New Athena Unicode is a libre/open multilingual font"
+        },
+        "ghc-resolv": {
+            "Name": "ghc-resolv",
+            "Architecture": "x86_64",
+            "Description": "Domain Name Service (DNS) lookup via the libresolv standard library routines"
+        },
+        "mpris-scrobbler": {
+            "Name": "mpris-scrobbler",
+            "Architecture": "x86_64",
+            "Description": "User daemon to submit currently playing song to LastFM, LibreFM, ListenBrainz"
+        },
+        "openoffice": {
+            "Name": "openoffice",
+            "Architecture": "org-diafilter",
+            "Description": "DIA diagram shape importer and gallery extension for LibreOffice"
+        },
+        "perl-Crypt-OpenSSL-Random": {
+            "Name": "perl-Crypt-OpenSSL-Random",
+            "Architecture": "x86_64",
+            "Description": "OpenSSL/LibreSSL pseudo-random number generator access"
+        },
+        "python3-openoffice": {
+            "Name": "python3-openoffice",
+            "Architecture": "noarch",
+            "Description": "Python 3 libraries for interacting with LibreOffice"
+        },
+        "rep-gtk": {
+            "Name": "rep-gtk",
+            "Architecture": "x86_64",
+            "Description": "GTK+ binding for librep Lisp environment"
+        },
+        "retroarch": {
+            "Name": "retroarch",
+            "Architecture": "x86_64",
+            "Description": "Cross-platform, sophisticated frontend for the libretro API."
+        },
+        "typelib-1_0-Retro-1-0": {
+            "Name": "typelib-1_0-Retro-1-0",
+            "Architecture": "x86_64",
+            "Description": "GObject introspection bindings for libretro-gtk"
+        },
+        "unoconv": {
+            "Name": "unoconv",
+            "Architecture": "noarch",
+            "Description": "A tool to convert documents from/to any format supported by LibreOffice"
+        }
+    }
+}

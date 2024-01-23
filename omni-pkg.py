@@ -1,200 +1,225 @@
-"""
-A package manager wrapper for local and containerised package managers.
-Developed by jxctno (jxctno@jxctno.com)
-Heavily based on Rhino Linux's 'rhino-pkg' (github.com/rhino-linux/rhino-pkg)
-"""
+#!/usr/bin/env python3
 
-import shutil
-import subprocess
-import json
 import os
+import subprocess
+import sys
 
 
-global PACKAGE_MANAGERS 
-PACKAGE_MANAGERS = {
-    "apt": {
-        "command": "apt",
-        "install": "install",
-        "remove": "remove",
-        "update": "update",
-        "upgrade": "upgrade",
-        "search": "search",
-        "list": "list",
-        "show": "show",
-        "clean": "clean"
+global Colors
+Colors = {
+    "fg":{
+        "black": "\033[30m",
+        "red": "\033[31m",
+        "green": "\033[32m",
+        "yellow": "\033[33m",
+        "blue": "\033[34m",
+        "magenta": "\033[35m",
+        "cyan": "\033[36m",
+        "white": "\033[37m",
     },
-    "dnf": {
-        "command": "dnf",
-        "install": "install",
-        "remove": "remove",
-        "update": "update",
-        "upgrade": "upgrade",
-        "search": "search",
-        "list": "list",
-        "show": "info",
-        "clean": "clean"
+    "bg": {
+        "black": "\033[40m",
+        "red": "\033[41m",
+        "green": "\033[42m",
+        "yellow": "\033[43m",
+        "blue": "\033[44m",
+        "magenta": "\033[45m",
+        "cyan": "\033[46m",
+        "white": "\033[47m",
     },
-    "pacman": {
-        "command": "pacman",
-        "install": "-S",
-        "remove": "-R",
-        "update": "-Sy",
-        "upgrade": "-Su",
-        "search": "-Ss",
-        "list": "-Q",
-        "show": "-Qi",
-        "clean": "-Sc"
-    },
-    "emerge": {
-        "command": "emerge",
-        "install": -1,
-        "remove": "--unmerge",
-        "update": "--sync",
-        "upgrade": "--update --deep",
-        "search": "--search",
-        "list": "--list",
-        "show": "--info",
-        "clean": "--depclean"
-    },
-    "pkgtool": {
-        "command": "pkgtool",
-        "install": "installpkg",
-        "remove": "removepkg",
-        "update": -1,
-        "upgrade": -1,
-        "search": -1,
-        "list": "ls",
-        "show": -1,
-        "clean": -1
-    },
-    "zypper": {
-        "command": "zypper",
-        "install": "install",
-        "remove": "remove",
-        "update": "update",
-        "upgrade": "dup",
-        "search": "search",
-        "list": "search --installed-only",
-        "show": "info",
-        "clean": "clean"
-    },
-    "dpkg": {
-        "command": "dpkg",
-        "install": "-i",
-        "remove": "-r",
-        "update": "--configure -a",
-        "upgrade": "-l",
-        "search": "-l",
-        "list": "-l",
-        "show": "-l",
-        "clean": "apt-get clean && apt-get autoclean"
-    },
-    "yum": {
-        "command": "yum",
-        "install": "install",
-        "remove": "remove",
-        "update": "update",
-        "upgrade": "update",
-        "search": "search",
-        "list": "list installed",
-        "show": "info",
-        "clean": "clean all"
-    },
-    "apk": {
-        "command": "apk",
-        "install": "add",
-        "remove": "del",
-        "update": "update",
-        "upgrade": "upgrade",
-        "search": "search",
-        "list": "info",
-        "show": "info",
-        "clean": "cache clean"
-    },
-    "flatpak": {
-        "command": "flatpak",
-        "install": "install",
-        "remove": "uninstall",
-        "update": "update",
-        "upgrade": "upgrade",
-        "search": "search",
-        "list": "list",
-        "show": "info",
-        "clean": "repair"
-    },
-    "snap": {
-        "command": "snap",
-        "install": "install",
-        "remove": "remove",
-        "update": "refresh",
-        "upgrade": "refresh",
-        "search": "find",
-        "list": "list",
-        "show": "info",
-        "clean": "forget"
+    "fmt": {
+        "reset": "\033[0m",
+        "bold": "\033[1m",
+        "faint": "\033[2m",
+        "italic": "\033[3m",
+        "underline": "\033[4m",
+        "blink": "\033[5m",
+        "blink_fast": "\033[6m",
+        "reverse": "\033[7m",
+        "conceal": "\033[8m",
+        "strikethrough": "\033[9m",
     }
 }
 
+global NO_PROMPT
 
-# System class for managing package managers.
-class System:
-    def __init__(self, verbose=False):
-        # Dictionary to store available package managers and their paths.
-        self.PackageManagers = {}
-        # Flag for verbose output
-        self.verbose = verbose
-        # Initializing available package managers.
-        self.initialize_package_managers()
+class PackageManager:
+    def __init__(self):
+        pass
 
-    # Function to check if a package manager command is available.
-    def check_package_manager(self, command):
-        return shutil.which(command)
+    def search(self, query):
+        raise NotImplementedError("Search method must be implemented in the derived class")
 
-    # Function to initialize available package managers.
-    def initialize_package_managers(self):
-        for pm, commands in PACKAGE_MANAGERS.items():
-            path = self.check_package_manager(commands["command"])
-            if path:
-                self.PackageManagers[pm] = {"commands": commands, "path": path}
+    def install(self, package):
+        raise NotImplementedError("Install method must be implemented in the derived class")
 
-    # Function to search for a package across all installed package managers.
-    def search_package(self, search_query):
-        results = {}
-        for pm_name, pm_info in self.PackageManagers.items():
-            pm_commands = pm_info["commands"]
-            search_cmd = [pm_info["path"], pm_commands["search"], search_query]
-            # Assuming the output format for the search results is a list of dictionaries
-            search_result = self.run_shell_command(search_cmd)
-            if search_result:
-                results[pm_name] = search_result
-                if self.verbose:
-                    print(f"Search result for {pm_name}: {search_result}")
+    def remove(self, package):
+        raise NotImplementedError("Remove method must be implemented in the derived class")
+
+class Dnf:
+    def search(query):
+        try:
+            output = subprocess.check_output(["dnf", "search", query], text=True)
+            output = output.split("\n")
+            
+            results = {
+                "Exact": {},
+                "Similar": {}
+            }
+
+            exactResult = False
+
+            # Cycle through each item in the output
+            for item in range(len(output)):
+                print(output[item])
+                # If the item is not empty
+                if output[item] != "":
+                    # Check if the item is a header
+                    if "=" in output[item]:
+                        # Check if it's Exact or Similar matches
+                        if "Exact" in output[item]:
+                            # Set exactResult to True
+                            exactResult = True
+                            pass
+                        elif "Summary" in output[item]:
+                            # Set exactResult to False
+                            exactResult = False
+                            pass
+                    else:
+                        # Split the item into the name and the description
+                        thisItem = output[item].split(" : ")
+                        #print(thisItem)
+
+                        # Create a dictionary for the item
+                        """
+                        {
+                            "Name": "Name",
+                            "Description": "Description"
+                        }
+                        """
+                        thisItem = {
+                            "Name": thisItem[0].split(".")[0],
+                            "Architecture": thisItem[0].split(".")[1],
+                            "Description": thisItem[1]
+                        }
+
+
+                        # Add it to the results in the correct category
+                        if exactResult:
+                            results["Exact"][thisItem["Name"]] = thisItem
+                        else:
+                            results["Similar"][thisItem["Name"]] = thisItem
+            
+        except subprocess.CalledProcessError:
+            results = {}
+
         return results
 
-    # Function to run a shell command and return the output as a list of dictionaries.
-    def run_shell_command(self, command):
-        # result = subprocess.run(command, capture_output=True, text=True)
-        # if result.returncode == 0:
-        #     # Assuming the output format for the search results is a list of dictionaries
-        #     return json.loads(result.stdout)
-        # else:
-        #     return None
-        if self.verbose:
-            print(f"Running command: {command}")
+    def install(self, package):
+        try:
+            subprocess.check_call(["sudo", "dnf", "install", package,  if NO_PROMPT else "-y"])
+        except subprocess.CalledProcessError:
+            print(f"Error installing {package}")
 
-        # turn command into string
-        command = " ".join(command)
-        os.system(command)
+    def remove(self, package):
+        try:
+            subprocess.check_call(["sudo", "dnf", "remove", package,  if NO_PROMPT else "-y"])
+        except subprocess.CalledProcessError:
+            print(f"Error removing {package}")
 
-# Example usage:
-VERBOSE = True  # Set to True for verbose output
-system_info = System(verbose=VERBOSE)
-search_query = "example-package"
-search_results = system_info.search_package(search_query)
+class Flatpak(PackageManager):
+    def search(self, query):
+        try:
+            result = subprocess.check_output(["flatpak", "search", "--columns=application", query], text=True)
+            return result.split("\n")
+        except subprocess.CalledProcessError:
+            return []
 
-# Printing the search results
-print("Search Results:")
-print(f"Search Query: {search_query}")
-print("Results:")
-for pm_name, pm_results in search_results.items():
-    print(f"- {pm_name}: {pm_results}")
+    def install(self, package):
+        try:
+            subprocess.check_call(["flatpak", "install", package,  if NO_PROMPT else "-y"])
+        except subprocess.CalledProcessError:
+            print(f"Error installing {package}")
+
+    def remove(self, package):
+        try:
+            subprocess.check_call([ "flatpak", "uninstall", package, if NO_PROMPT else "-y"])
+        except subprocess.CalledProcessError:
+            print(f"Error removing {package}")
+
+def prompt(message, max_value):
+    while True:
+        try:
+            value = int(input(f"{message} [0-{max_value}]: "))
+            if value < 0 or value > max_value:
+                raise ValueError()
+            return value
+        except ValueError:
+            print("Invalid input")
+
+
+def search(query):
+    # Search for the package in DNF
+    dnf_results = Dnf.search(query)
+    flatpak_results = Flatpak.search(query)
+
+    all_results = {
+        "Exact": {
+            "dnf": dnf_results["Exact"],
+            "flatpak": {
+                flatpak_results["Exact"]
+            }
+        },
+        "Similar": {}
+    }
+
+    # Print the results
+    print(f"{Colors['fg']['cyan']}Exact matches{Colors['fmt']['reset']}")
+    for packageNum in range(len(dnf_results["Exact"])):
+        packageNum += 1
+        package = dnf_results["Exact"][packageNum][0]
+        # format packageNum to be 2 digits with a space in front
+        packageNum = f"{packageNum:02d} "
+        print(f"{packageNum}. {package}")
+
+    
+        
+
+def main():
+    args = sys.argv[1:]
+
+    if len(args) == 0:
+        print("USAGE: omni [function] {flag} <package>")
+        sys.exit(1)
+
+    if "--no-prompt" in args:
+        args.remove("--no-prompt")
+        NO_PROMPT = True
+    else:
+        NO_PROMPT = False
+
+    # Check if each package manager is installed
+    dnf_installed = False
+    flatpak_installed = False
+
+    try:
+        subprocess.check_output(["which", "dnf"])
+        dnf_installed = True
+    except subprocess.CalledProcessError:
+        pass
+
+    try:
+        subprocess.check_output(["which", "flatpak"])
+        flatpak_installed = True
+    except subprocess.CalledProcessError:
+        pass
+
+    # Check if the user wants to install a package
+
+
+       
+
+
+
+if __name__ == "__main__":
+    main()
